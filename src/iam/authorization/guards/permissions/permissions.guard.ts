@@ -26,7 +26,7 @@ export class PermissionsGuard implements CanActivate {
     ];
 
     return contextPermissions.every(
-      (permission) => user.permission?.includes(permission),
+      (permission) => user.permissions?.includes(permission),
     );
   }
 }
